@@ -1,0 +1,1 @@
+document.querySelectorAll('.load-map').forEach(button=>button.addEventListener('click',()=>{const frame=document.createElement('iframe');frame.title='바른골프피팅센터 동래점 위치 지도';frame.src=button.dataset.mapSrc;frame.referrerPolicy='no-referrer';frame.allowFullscreen=true;button.closest('.map-placeholder').replaceWith(frame);}));
